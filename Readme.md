@@ -1,20 +1,38 @@
 # Kafka stock Market Project
+----------------------------------------
+This project is real-time stock market data analysis using Kakfa and multiple AWS services.
 
-Technologies : Kafka, Python, AWS
+
+
+
+Requirements : 
+----------------------------------------
+Python
+Apache Kafka
+Amazon Web Service (AWS)
+1. S3 (Simple Storage Service)
+2. Athena
+3. Glue Crawler
+4. Glue Catalog
+5. EC2
 
 Steps:
-Once you have EC2 instance running:
+----------------------------------------
+Once you have EC2 instance running on yo ur AWS:
 
+1. Generate and download .pem file for access.
+2. Download kafka using following command.
 
 wget https://downloads.apache.org/kafka/3.3.1/kafka_2.12-3.3.1.tgz
 tar -xvf kafka_2.12-3.3.1.tgz
 
-
------------------------
+3. Download Java requirement using following commands.
 java -version
 sudo yum install java-1.8.0-openjdk
 java -version
 cd kafka_2.12-3.3.1
+
+4. Start the Zoo keeper, Kafka Server and Producer
 
 Start Zoo-keeper:
 -------------------------------
